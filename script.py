@@ -1,7 +1,5 @@
 # -*- coding: UTF-8 -*-
-"""
-hello_jinja2: Get start with Jinja2 templates
-"""
+
 #import os
 #import numpy as np
 import flask
@@ -27,7 +25,7 @@ def process():
 		return render_template('response.html', username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና የተሳሳተ(Fake) ነው')
 	else:
 		#prediction= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና ትክክለኛ(Real) ነው'
-		return render_template('response.html', username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና የተሳሳተ(Real) ነው')
+		return render_template('response.html', username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና ትክክለኛ(Real) ነው')
         
 
 if __name__ == '__main__':
