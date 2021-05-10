@@ -22,10 +22,10 @@ def process():
 	result = model.predict(_username)
 	if int(result) == 1:
 		#username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና የተሳሳተ(Fake) ነው'
-		return render_template('response.html', username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና የተሳሳተ(Fake) ነው')
+		return render_template('response.html', username= 'ያስገቡት ዜና አጠራጣሪ ነው! (Fake)')
 	else:
 		#prediction= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና ትክክለኛ(Real) ነው'
-		return render_template('response.html', username= 'በተደረገው ማጣራት መሰረት ያስገቡት ዜና ትክክለኛ(Real) ነው')
+		return render_template('response.html', username= 'ያስገቡት ዜና ከሞላ ጎደል ተአማኝ ነው!(Real)')
         
 
 if __name__ == '__main__':
